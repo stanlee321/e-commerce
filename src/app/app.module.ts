@@ -16,6 +16,7 @@ import { DiscountComponent } from './discount/discount.component';
 import { SingleViewComponent } from './single-view/single-view.component';
 import { HeaderProductComponent } from './header-product/header-product.component';
 import { ModalComponent } from './modal/modal.component';
+import { ProductOverviewComponent } from './product-overview/product-overview.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -42,13 +43,14 @@ const appRoutes: Routes = [
     DiscountComponent,
     SingleViewComponent,
     HeaderProductComponent,
-    ModalComponent
+    ModalComponent,
+    ProductOverviewComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(
       appRoutes,
-      { enableTracing: true }) // <-- debugging purposes only
+      { enableTracing: false }) // <-- debugging purposes only
   ],
   providers: [],
   bootstrap: [AppComponent]
